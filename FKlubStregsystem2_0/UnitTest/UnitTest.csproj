@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="3.12.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.17.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="NSubstitute.Analyzers.CSharp" Version="1.0.14" />
+    <PackageReference Include="NSubstitute" Version="4.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FKlubStregsystem\FKlubStregsystem.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="New Folder With Items\StregsystemTest.cs~" />
+    <None Remove="New Folder With Items\UserTest.cs~" />
+    <None Remove="New Folder With Items\StregsystemCommandParserTest.cs~" />
+    <None Remove="StregsystemCommandParserTest.cs~" />
+  </ItemGroup>
+</Project>

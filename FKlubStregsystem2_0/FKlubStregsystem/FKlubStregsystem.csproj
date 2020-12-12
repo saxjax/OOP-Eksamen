@@ -1,0 +1,57 @@
+
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="3.12.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.17.0" />
+    <PackageReference Include="NSubstitute.Analyzers.CSharp" Version="1.0.14" />
+    <PackageReference Include="NSubstitute" Version="4.2.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="StregsysUI\" />
+    <Folder Include="StregsysUI\Views\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="StregsysUI\ViewControllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Model\IStregsystem.cs" />
+    <Compile Remove="Model\Stregsystem.cs" />
+    <Compile Remove="StregsysUI\Views\MainView.cs" />
+    <Compile Remove="StregsysUI\ViewModels\StregsystemUI.cs" />
+    <Compile Remove="StregsysController\StregsystemLogic\UserBalanceNotification.cs" />
+    <Compile Remove="StregsysUI\Views\PurchasedProductsMessage.cs~" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="StregsysUI\Views\MainView.cs~" />
+    <None Remove="StregsysUI\Views\MyMessage.cs~" />
+    <None Remove="StregsysUI\Views\StregsystemMessage.cs~" />
+    <None Remove="Program.cs~" />
+    <None Remove="Helpers\customExceptions.cs~" />
+    <None Remove="StregsysController\New Folder With Items\StregsystemCommandParser.cs~" />
+    <None Remove="StregsysController\New Folder With Items\StregsystemController.cs~" />
+    <None Remove="Helpers\New Folder With Items\LowBalanceEventArgs.cs~" />
+    <None Remove="Helpers\New Folder With Items\customExceptions.cs~" />
+    <None Remove="StregsysController\StregsysCLI\untitled folder\StregsystemCLI.cs~" />
+    <None Remove="StregsysController\StregsystemLogic\New Folder With Items\Stregsystem.cs~" />
+    <None Remove="StregsysController\StregsystemLogic\New Folder With Items\IStregsystem.cs~" />
+    <None Remove="StregsystemModels\New Folder With Items\BuyTransaction.cs~" />
+    <None Remove="StregsystemModels\New Folder With Items\User.cs~" />
+    <None Remove="StregsystemModels\New Folder With Items\Transaction.cs~" />
+    <None Remove="StregsystemModels\New Folder With Items\Product.cs~" />
+    <None Remove="StregsysUI\ViewModels\New Folder With Items\IStregsystemUI.cs~" />
+    <None Remove="StregsysUI\ViewModels\New Folder With Items\StregsystemUI.cs~" />
+    <None Remove="StregsysUI\Views\New Folder With Items\MainView.cs~" />
+    <None Remove="StregsysUI\Views\New Folder With Items\StregsystemMessage.cs~" />
+    <None Remove="StregsysUI\Views\New Folder With Items\MyMessage.cs~" />
+    <None Remove="untitled folder\Program.cs~" />
+    <None Remove="StregsysUI\ViewModels\.DS_Store" />
+    <None Remove="StregsysController\StregsysCLI\.DS_Store" />
+  </ItemGroup>
+</Project>
